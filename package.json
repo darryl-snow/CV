@@ -4,7 +4,7 @@
   "description": "Personal CV of Darryl Snow, Digital Product Owner",
   "main": "index.js",
   "author": "Darryl Snow",
-  "homepage": "",
+  "homepage": "https://darryl-snow.github.io/CV/",
   "repository": {
     "type": "git",
     "url": "https://github.com/darryl-snow/cv.git"
