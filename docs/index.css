@@ -1,0 +1,349 @@
+
+/* line 297 : /Users/darryl/Documents/personal/git/CV/src/css/index.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/index.styl */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700|Shrikhand");
+
+/* line 15 : /Users/darryl/Documents/personal/git/CV/node_modules/stylus/lib/functions/index.styl */
+
+/* line 2 : /Users/darryl/Documents/personal/git/CV/src/css/base/variables.styl */
+
+/* line 52 : /Users/darryl/Documents/personal/git/CV/src/css/base/variables.styl */
+
+/* line 52 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+body {
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 75%;
+  margin: 1.5em;
+  padding: 0;
+  -webkit-font-smoothing: anti-aliased;
+}
+@media print {
+
+/* line 12 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+  body {
+    font-size: 8pt;
+    margin: 0;
+  }
+}
+@media (min-width: 45em) {
+
+/* line 16 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+  body {
+    font-size: 100%;
+  }
+}
+
+/* line 19 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+/* line 23 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
+}
+
+/* line 32 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+h1 {
+  font-size: 3em;
+  margin: 0 0 0.15em 0;
+}
+
+/* line 36 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+h2 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+/* line 40 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+h3 {
+  font-size: 1.4em;
+}
+
+/* line 43 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+h4 {
+  color: #1eae98;
+}
+
+/* line 46 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+p {
+  margin-bottom: 0.4em;
+  margin-top: 0;
+}
+
+/* line 50 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+sup {
+  font-size: 0.5em;
+  text-transform: lowercase;
+}
+
+/* line 23 : /Users/darryl/Documents/personal/git/CV/src/css/base/general.styl */
+
+/* line 7 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-align--center {
+  text-align: center;
+}
+
+/* line 4 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-align--right {
+  text-align: right;
+}
+
+/* line 7 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-layout--grid {
+  display: grid;
+}
+
+/* line 10 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-margin {
+  margin: 1.5em;
+}
+
+/* line 13 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-margin--bottom {
+  margin-bottom: 1.5em;
+}
+
+/* line 16 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-padding {
+  padding: 1.5em;
+}
+
+/* line 19 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-padding--bottom {
+  padding-bottom: 1.5em;
+}
+
+/* line 22 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+.u-push-left {
+  padding-left: 3rem;
+}
+
+/* line 17 : /Users/darryl/Documents/personal/git/CV/src/css/base/utilities.styl */
+
+/* line 17 : /Users/darryl/Documents/personal/git/CV/src/css/objects/highlight.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/objects/highlight.styl */
+.o-highlight {
+  padding-left: 3rem;
+  position: relative;
+}
+
+/* line 5 : /Users/darryl/Documents/personal/git/CV/src/css/objects/highlight.styl */
+.o-highlight::before {
+  background: #1eae98;
+  content: '';
+  height: 3.5em;
+  left: 0;
+  position: absolute;
+  top: 3%;
+  width: 2em;
+}
+
+/* line 14 : /Users/darryl/Documents/personal/git/CV/src/css/objects/highlight.styl */
+.o-highlight--special {
+  padding-left: 0;
+}
+
+/* line 17 : /Users/darryl/Documents/personal/git/CV/src/css/objects/highlight.styl */
+.o-highlight--special::before {
+  background: #d8b5ff;
+  display: none;
+}
+@media (min-width: 45em) {
+
+/* line 21 : /Users/darryl/Documents/personal/git/CV/src/css/objects/highlight.styl */
+  .o-highlight--special {
+    padding-left: 3rem;
+  }
+
+/* line 24 : /Users/darryl/Documents/personal/git/CV/src/css/objects/highlight.styl */
+  .o-highlight--special::before {
+    display: block;
+  }
+}
+
+/* line 17 : /Users/darryl/Documents/personal/git/CV/src/css/objects/image.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/objects/image.styl */
+.o-image {
+  height: 10em;
+  margin: 0 1em 0 1em;
+}
+
+/* line 5 : /Users/darryl/Documents/personal/git/CV/src/css/objects/image.styl */
+.o-image--rounded {
+  border-radius: 50%;
+}
+
+/* line 8 : /Users/darryl/Documents/personal/git/CV/src/css/objects/image.styl */
+.o-image--bordered {
+  border-color: #d8b5ff;
+  border-style: solid;
+  border-width: 0.4em;
+}
+
+/* line 18 : /Users/darryl/Documents/personal/git/CV/src/css/objects/list.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/objects/list.styl */
+
+/* line 3 : /Users/darryl/Documents/personal/git/CV/src/css/objects/list.styl */
+.o-list--inline li {
+  display: inline-block;
+}
+
+/* line 6 : /Users/darryl/Documents/personal/git/CV/src/css/objects/list.styl */
+.o-list--inline li::after {
+  color: #1eae98;
+  content: ' | ';
+}
+
+/* line 10 : /Users/darryl/Documents/personal/git/CV/src/css/objects/list.styl */
+
+/* line 12 : /Users/darryl/Documents/personal/git/CV/src/css/objects/list.styl */
+.o-list--inline li:last-of-type::after {
+  display: none;
+}
+
+/* line 15 : /Users/darryl/Documents/personal/git/CV/src/css/objects/list.styl */
+.o-list--unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 2 : /Users/darryl/Documents/personal/git/CV/src/css/objects/subheading.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/objects/subheading.styl */
+.o-subheading {
+  font-size: 0.75em;
+}
+
+/* line 14 : /Users/darryl/Documents/personal/git/CV/src/css/objects/subheading.styl */
+
+/* line 14 : /Users/darryl/Documents/personal/git/CV/src/css/components/comment-box.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/components/comment-box.styl */
+.c-comment-box {
+  color: #a7a7a7;
+  height: 22em;
+  outline: 1px solid #222;
+  position: relative;
+}
+
+/* line 7 : /Users/darryl/Documents/personal/git/CV/src/css/components/comment-box.styl */
+.c-comment-box::after {
+  bottom: 0;
+  color: #d3d3d3;
+  content: '/10';
+  font-size: 3em;
+  font-weight: 600;
+  position: absolute;
+  right: 1.5rem;
+}
+
+/* line 5 : /Users/darryl/Documents/personal/git/CV/src/css/components/contact-methods.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/components/contact-methods.styl */
+.c-contact-methods {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  margin: 1.5em 0;
+}
+@media (min-width: 45em) {
+
+/* line 9 : /Users/darryl/Documents/personal/git/CV/src/css/components/contact-methods.styl */
+  .c-contact-methods {
+    align-items: flex-end;
+    margin: 0;
+  }
+}
+
+/* line 11 : /Users/darryl/Documents/personal/git/CV/src/css/components/header.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/components/header.styl */
+.c-header {
+  position: relative;
+  text-align: center;
+}
+
+/* line 5 : /Users/darryl/Documents/personal/git/CV/src/css/components/header.styl */
+.c-header::after {
+  background: #1eae98;
+  background: linear-gradient(to right, #d8b5ff 0%, #1eae98 100%);
+  bottom: 0;
+  content: '.';
+  font-size: 1px;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+}
+@media (min-width: 45em) {
+
+/* line 15 : /Users/darryl/Documents/personal/git/CV/src/css/components/header.styl */
+  .c-header {
+    grid-template-columns: 3fr 1fr 2fr;
+    text-align: left;
+  }
+}
+
+/* line 49 : /Users/darryl/Documents/personal/git/CV/src/css/components/history.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/components/history.styl */
+.c-history {
+  margin-bottom: 1.5em;
+}
+
+/* line 4 : /Users/darryl/Documents/personal/git/CV/src/css/components/history.styl */
+.c-history-details {
+  color: #1eae98;
+  display: flex;
+  font-size: 0.8em;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+/* line 13 : /Users/darryl/Documents/personal/git/CV/src/css/components/icon.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/components/icon.styl */
+.c-icon {
+  color: #1eae98;
+  font-size: 1.25em;
+  margin-left: 0.5em;
+}
+
+/* line 15 : /Users/darryl/Documents/personal/git/CV/src/css/components/main-content.styl */
+
+/* line 1 : /Users/darryl/Documents/personal/git/CV/src/css/components/main-content.styl */
+.c-main-content {
+  grid-gap: 3em;
+}
+@media (min-width: 45em) {
+
+/* line 4 : /Users/darryl/Documents/personal/git/CV/src/css/components/main-content.styl */
+  .c-main-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}

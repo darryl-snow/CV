@@ -1,0 +1,25 @@
+.o-highlight
+  padding-left 3rem
+  position relative
+
+  &::before
+    background colors--green
+    content ''
+    height 3.5em
+    left 0
+    position absolute
+    top 3%
+    width 2em
+
+.o-highlight--special
+  padding-left 0
+
+  &::before
+    background colors--purple
+    display none
+
+  @media (min-width: small-width)
+    padding-left 3rem
+
+    &::before
+      display block

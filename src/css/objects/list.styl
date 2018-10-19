@@ -1,0 +1,17 @@
+.o-list--inline
+
+  li
+    display inline-block
+
+    &::after
+      color colors--green
+      content ' | '
+
+    &:last-of-type
+
+      &::after
+        display none
+
+.o-list--unstyled
+  list-style none
+  padding 0

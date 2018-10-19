@@ -1,0 +1,17 @@
+.c-header
+  position relative
+  text-align center
+
+  &::after
+    background colors--green
+    background linear-gradient(to right, colors--purple 0%,colors--green 100%)
+    bottom 0
+    content '.'
+    font-size 1px
+    height 3px
+    position absolute
+    width 100%
+
+  @media (min-width: small-width)
+    grid-template-columns 3fr 1fr 2fr
+    text-align left
