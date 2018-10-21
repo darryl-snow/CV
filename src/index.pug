@@ -7,7 +7,7 @@ block styles
 
 block content
 
-  .u-layout--grid.u-overflow-hidden
+  .u-layout--grid.u-overflow-hidden(itemscope, itemtype="http://schema.org/Person")
 
     header.u-layout--grid.u-margin--bottom.u-padding--bottom.c-header
 
@@ -15,13 +15,15 @@ block content
 
         .o-highlight.o-highlight--special
 
-          h1 Darryl Snow
+          h1(itemprop="name") Darryl Snow
 
-          p I'm a Scrum Product Owner with a strong technical and UX background focusing on mobile web apps. I'm looking to join a motivated team where I can help craft a clear product vision and drive incremental releases that continuously deliver value.
+          p I'm a 
+            span(itemprop="jobTitle") Digital Product Owner 
+            | with a strong technical and UX background focusing on mobile web apps. I'm looking to join a motivated team where I can help craft a clear product vision and drive incremental releases that continuously deliver value.
 
       section.u-align--center
 
-        img.o-image.o-image--bordered.o-image--rounded(alt='Darryl Snow', src="img/darryl-snow.jpg")
+        img.o-image.o-image--bordered.o-image--rounded(alt='Darryl Snow', itemprop="image", src="img/darryl-snow.jpg")
 
       section
 
@@ -29,26 +31,26 @@ block content
 
           li
             a(href="tel:+6591648926", title="Call me")
-              span (+65) 9164-8926
+              span(itemprop="telephone") (+65) 9164-8926
               i.fas.fa-phone.c-icon
 
           li
             a(href="mailto:darryl@yourweb.expert", title="Mail me")
-              span darryl@yourweb.expert
+              span(itemprop="email") darryl@yourweb.expert
               i.fas.fa-envelope.c-icon
 
           li
             a(href="https://yourweb.expert", title="Check out my website")
-              span yourweb.expert
+              span(itemprop="url") yourweb.expert
               i.fas.fa-id-card.c-icon
 
           li
             a(href="https://www.linkedin.com/in/darrylsnow/", title="Check out my Linkedin Profile")
-              span linkedin.com/in/darrylsnow/
+              span(itemprop="url") linkedin.com/in/darrylsnow/
               i.fab.fa-linkedin.c-icon
 
-          li
-            span Singapore
+          li(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+            span(itemprop="addressCountry") Singapore
             i.fas.fa-map-marker-alt.c-icon
 
     main.u-layout--grid.c-main-content
@@ -57,117 +59,141 @@ block content
 
         section
 
-          h2.u-push-left Experiences
+          h2.u-push-left Experience
 
           ol.o-list.o-list--unstyled
 
-            li.o-highlight.c-history
+            li.o-highlight.c-history(itemscope, itemtype="http://schema.org/Organization")
 
-              .c-history-details
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 08/2017 &ndash; Present&nbsp;
                   em (1 year, 2 months)
 
-                span Singapore
+                span
+                  span(itemprop="addressLocality") Singapore
                   i.fas.fa-map-marker-alt.c-icon
 
-              h3 Product Analyst
-                .o-subheading Standard Chartered Bank
+              h3
+                span(itemprop="jobTitle") Product Analyst
+                .o-subheading(itemprop="name") Standard Chartered Bank
 
-              h4 Accomplishments
+              .c-history-description(itemprop="description")
 
-              p Led the development of APIs and a single web app interface to provide first-to-market capabilities that gives both customers and call center staff full control over their credit cards and notifications.
-              p Implemented the first baby steps towards agile delivery.
-              p Contributed to the end-to-end automation 70% of all customer service requests via the bank's mobile app.
+                h4 Accomplishments
 
-            li.o-highlight.c-history
+                p Led the development of APIs and a single web app interface to provide first-to-market capabilities that gives both customers and call center staff full control over their credit cards and notifications.
+                p Implemented the first baby steps towards agile delivery.
+                p Contributed to the end-to-end automation 70% of all customer service requests via the bank's mobile app.
 
-              .c-history-details
+            li.o-highlight.c-history(itemscope, itemtype="http://schema.org/Organization")
+
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 07/2016 &ndash; 08/2017&nbsp;
                   em (1 year, 1 month)
 
-                span Shanghai
+                span
+                  span(itemprop="addressLocality") Shanghai
                   i.fas.fa-map-marker-alt.c-icon
 
-              h3 Scrum Product Owner
-                .o-subheading VML
+              h3
+                span(itemprop="jobTitle") Scrum Product Owner/Scrum Master
+                .o-subheading(itemprop="name") VML
 
-              h4 Accomplishments
+              .c-history-description(itemprop="description")
 
-              p As a pure scrum Product Owner, I crafted the user journeys and supported the incremental development for the initial release of Lincoln Way, a hybrid mobility application to support the rapidly expanding luxury auto brand in China
-              p As a scrum master on a project for HSBC, I delivered the first market launch of the bank's global public website at huge cost and time savings compared to previous projects
+                h4 Accomplishments
 
-            li.o-highlight.c-history
+                p As a pure scrum Product Owner, I crafted the user journeys and supported the incremental development for the initial release of Lincoln Way, a hybrid mobility application to support the rapidly expanding luxury auto brand in China
+                p As a scrum master on a project for HSBC, I delivered the first market launch of the bank's global public website at huge cost and time savings compared to previous projects
 
-              .c-history-details
+            li.o-highlight.c-history(itemscope, itemtype="http://schema.org/Organization")
+
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 1999 &ndash; 07/2016&nbsp;
 
-                span Jersey, Beijing, Cupertino
+                span
+                  span(itemprop="addressLocality") Jersey, Beijing, Cupertino
                   i.fas.fa-map-marker-alt.c-icon
 
-              h3 Freelance
-                .o-subheading Web Designer, Developer & Scrum Master
+              h3
+                span(itemprop="jobTitle") Freelance
+                .o-subheading(itemprop="name") Web Designer, Developer &amp; Scrum Master
 
-              h4 Accomplishments
+              .c-history-description(itemprop="description")
 
-              p Seamless integration into product teams in multiple capacities at organizations ranging from small startups to tech giants like Apple
-              p Brought value through team training and championing agile processes
+                h4 Accomplishments
 
-            li.o-highlight.c-history
+                p Seamless integration into product teams in multiple capacities at organizations ranging from small startups to tech giants like Apple
+                p Brought value through team training and championing agile processes
 
-              .c-history-details
+            li.o-highlight.c-history(itemscope, itemtype="http://schema.org/Organization")
+
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 07/2012 &ndash; 07/2014&nbsp;
                   em (2 Years)
 
-                span Beijing
+                span
+                  span(itemprop="addressLocality") Beijing
                   i.fas.fa-map-marker-alt.c-icon
 
-              h3 Head of Research &amp; Products, Studio Lead, Account Manager
-                .o-subheading MullenLowe Profero
+              h3
+                span(itemprop="jobTitle") Head of Research &amp; Products, Studio Lead, Account Manager
+                .o-subheading(itemprop="name") MullenLowe Profero
 
-              h4 Accomplishments
+              .c-history-description(itemprop="description")
 
-              p Sold ideas to new and existing clients through rapid prototyping
-              p Managed a team of ~30 designers and developers
-              p Delivered and managed websites and applications for major global brands
+                h4 Accomplishments
 
-            li.o-highlight.c-history
+                p Sold ideas to new and existing clients through rapid prototyping
+                p Managed a team of ~30 designers and developers
+                p Delivered and managed websites and applications for major global brands
 
-              .c-history-details
+            li.o-highlight.c-history(itemscope, itemtype="http://schema.org/Organization")
+
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 05/2010 &ndash; 12/2010&nbsp;
                   em (8 months)
 
-                span Beijing
+                span
+                  span(itemprop="addressLocality") Beijing
                   i.fas.fa-map-marker-alt.c-icon
 
-              h3 Co-Founder
-                .o-subheading Greenfire Apps LLC
+              h3
+                span(itemprop="jobTitle") Co-Founder
+                .o-subheading(itemprop="name") Greenfire Apps LLC
 
-              h4 Accomplishments
+              .c-history-description(itemprop="description")
 
-              p Gained skills such as product ideation, iOS (Objective C) development, social media marketing
-              p Huge success in terms of both user feedback and revenue
+                h4 Accomplishments
 
-            li.o-highlight.c-history
+                p Gained skills such as product ideation, iOS (Objective C) development, social media marketing
+                p Huge success in terms of both user feedback and revenue
 
-              .c-history-details
+            li.o-highlight.c-history(itemscope, itemtype="http://schema.org/Organization")
+
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 03/2006 &ndash; 05/2008&nbsp;
                   em (2 years, 3 months)
 
-                span Beijing
+                span
+                  span(itemprop="addressLocality") Beijing
                   i.fas.fa-map-marker-alt.c-icon
 
-              h3 Web Designer
-                .o-subheading ZhengBang Design Agency
+              h3
+                span(itemprop="jobTitle") Web Designer
+                .o-subheading(itemprop="name") ZhengBang Design Agency
 
-              h4 Accomplishments
+              .c-history-description(itemprop="description")
 
-              p Started the company's digital/online deparment
+                h4 Accomplishments
+
+                p Started the company's digital/online deparment
 
       .c-main-content-column
       
@@ -177,81 +203,84 @@ block content
 
           ol.o-list.o-list--unstyled
 
-            li.c-history
+            li.c-history(itemscope, itemtype="http://schema.org/EducationalOrganization")
 
-              .c-history-details
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 2001 &ndash; 2004&nbsp;
                   em (3 years)
 
-                span Manchester
+                span(itemprop="addressLocality") Manchester
                   i.fas.fa-map-marker-alt.c-icon
 
               h3 BSc. (Hons) Computer Science
-                .o-subheading The University of Manchester
+                .o-subheading(itemprop="name") The University of Manchester
 
-            li.c-history
+            li.c-history(itemscope, itemtype="http://schema.org/EducationalOrganization")
 
-              .c-history-details
+              .c-history-details(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
 
                 span 2005 &ndash; 2005&nbsp;
                   em (1 year)
 
-                span London
+                span(itemprop="addressLocality") London
                   i.fas.fa-map-marker-alt.c-icon
 
               h3 Graphic Design
-                .o-subheading Central St. Martin's College of Art &amp; Design
+                .o-subheading(itemprop="name") Central St. Martin's College of Art &amp; Design
 
         section
 
           h2 Skills
 
-          ul.o-list.o-list--inline.o-list--unstyled
-            li Agile Product Management
-            li Scrum
-            li Kanban
-            li Web Applications
-            li Mobile Applications
-            li Digital Strategy
-            li Test/QA Strategy
-            li Microcopy
-            li Analytics
-            li SEO
-            li Performance
-            li Accessibility
+          ul.o-list.o-list--inline.o-list--unstyled(itemscope, itemtype="http://schema.org/ItemList")
+            li(itemprop="itemListElement") Agile Product Management
+            li(itemprop="itemListElement") Scrum
+            li(itemprop="itemListElement") Kanban
+            li(itemprop="itemListElement") Web Applications
+            li(itemprop="itemListElement") Mobile Applications
+            li(itemprop="itemListElement") Digital Strategy
+            li(itemprop="itemListElement") Test/QA Strategy
+            li(itemprop="itemListElement") Microcopy
+            li(itemprop="itemListElement") Analytics
+            li(itemprop="itemListElement") SEO
+            li(itemprop="itemListElement") Performance
+            li(itemprop="itemListElement") Accessibility
+            li(itemprop="itemListElement") UX
 
         section
 
           h2 Achievements &amp; Certificates
 
-          ul.o-list
-            li Certified Scrum Product Owner &ndash; Scrum Alliance
-            li W3C Tech Conference (2011) Host, Beijing
-            li Established a web design agency at age 16
-            li Designed, built, released, and marketed an iOS App-of-the-Week; later sold for US$ 6-figure sum
-            li Built and sold a craft brewery
+          ul.o-list(itemscope, itemtype="http://schema.org/ItemList")
+            li(itemprop="itemListElement") Certified Scrum Product Owner &ndash; Scrum Alliance
+            li(itemprop="itemListElement") Certified for Machine Learning with TensorFlow on Google Cloud Platform
+            li(itemprop="itemListElement") W3C Tech Conference (2011) Host, Beijing
+            li(itemprop="itemListElement") Established a web design agency at age 16
+            li(itemprop="itemListElement") Designed, built, released, and marketed an iOS App-of-the-Week; later sold for US$ 6-figure sum
+            li(itemprop="itemListElement") Built and sold a craft brewery
 
 
         section
 
           h2 Languages
 
-          ul.o-list
-            li English
-            li Chinese (Mandarin)
+          ul.o-list(itemscope, itemtype="http://schema.org/ItemList")
+            li(itemprop="itemListElement") English
+            li(itemprop="itemListElement") Chinese (Mandarin)
 
         section
 
           h2 Interests
 
-          ul.o-list.o-list--inline.o-list--unstyled
-            li Programming
-            li Brewing
-            li Cooking
-            li Swimming
-            li Investing
-            li Nature
+          ul.o-list.o-list--inline.o-list--unstyled(itemscope, itemtype="http://schema.org/ItemList")
+            li(itemprop="itemListElement") Programming
+            li(itemprop="itemListElement") Brewing
+            li(itemprop="itemListElement") Cooking
+            li(itemprop="itemListElement") Swimming
+            li(itemprop="itemListElement") Investing
+            li(itemprop="itemListElement") Nature
+            li(itemprop="itemListElement") Dogs
 
         section
         
